@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Browse = () => {
+const BrowseTemplates = () => {
   return (
     <div>
       Browse Templates
@@ -8,4 +8,4 @@ const Browse = () => {
   )
 }
 
-export default Browse
+export default BrowseTemplates

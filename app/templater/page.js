@@ -1,7 +1,22 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 import ClassChooser from "../components/ClassChooser";
 import Equipment from "../components/Equipment";
 
 const Templater = () => {
+
+    // useEffect(() => {
+    //     async function getPageData() {
+    //         const apiUrlEndpoint = `http://localhost:3000/api/getdata`;
+    //         const response = await fetch(apiUrlEndpoint);
+    //         const res = await response.json();
+    //         console.log(res);
+    //     }
+    //     getPageData();
+    // }, []);
+
   return (
     <>
         <div className="mt-3 mb-3 py-0.5 px-4 text-2xl text-center bg-custom-gray text-custom-white rounded-md">

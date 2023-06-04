@@ -21,7 +21,10 @@ const Nav = () => {
         {/* <Link href='/Chimp' className="px-3">
           Chimp
         </Link> */}
-        <Link href='/browse' className="px-3">
+        <Link href='/search_items' className="px-3">
+          Search Items
+        </Link>
+        <Link href='/browse_templates' className="px-3">
           Browse Templates
         </Link>
         <Link href='/templater' className="px-3">
