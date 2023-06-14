@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from "react";
 
-import ClassChooser from "../components/ClassChooser";
-import Equipment from "../components/Equipment";
+import RealmSelect from "../components/RealmSelectMenu";
+import ClassSelect from "../components/ClassSelectMenu"
+import EquipmentCard from "../components/EquipmentCard";
+
 
 const Templater = () => {
 
@@ -21,36 +23,79 @@ const Templater = () => {
     <>
         <div className="mt-3 mb-3 py-0.5 px-4 text-2xl text-center bg-custom-gray text-custom-white rounded-md">
           Template Builder
+          
         </div>
-        <ClassChooser />
+        <p>TODO:  Style the colors for buttons and menus </p>
+        <div className="flex gap-10 mt-4">
+            <RealmSelect />
+            <ClassSelect />
+        </div>
 
         <div className="mt-5 grid grid-cols-5 gap-5">
-            <Equipment />
-            <Equipment />
-            <Equipment />
-            <Equipment />
-            <Equipment />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Chest"
+            />
+            <EquipmentCard 
+                itemSlot="Necklace"
+            />
+            <EquipmentCard 
+                itemSlot="Mythirian"
+            />
+            <EquipmentCard 
+                itemSlot="Cloak"
+            />
+            <EquipmentCard 
+                itemSlot="Helm"
+            />
+            <EquipmentCard 
+                itemSlot="Sleeves"
+            />
             <div className="col-span-3" />
-            <Equipment />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Gloves"
+            />
+            <EquipmentCard 
+                itemSlot="Jewel"
+            />
             <div className="col-span-3" />
-            <Equipment />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Belt"
+            />
+            <EquipmentCard 
+                itemSlot="Left Ring"
+            />
             <div className="col-span-3" />
-            <Equipment />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Right Ring"
+            />
+            <EquipmentCard 
+                itemSlot="Left Bracer"
+            />
             <div className="col-span-3" />
-            <Equipment />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Right Bracer"
+            />
+            <EquipmentCard 
+                itemSlot="Leggings"
+            />
             <div className="col-span-3" />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Boots"
+            />
         </div>
         <div className="mt-5 flex flex-center gap-11">            
-            <Equipment />
-            <Equipment />
-            <Equipment />
-            <Equipment />
+            <EquipmentCard 
+                itemSlot="Main Hand"
+            />
+            <EquipmentCard 
+                itemSlot="Off Hand"
+            />
+            <EquipmentCard 
+                itemSlot="Two Handed"
+            />
+            <EquipmentCard 
+                itemSlot="Ranged"
+            />
         </div>
 
         <section className="mt-5 flex flex-col flex-center w-full bg-custom-blue rounded-md">

@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 
 import Nav from './components/Nav';
 import Provider from './components/Provider';
-import Equipment from "./components/Equipment";
+import Equipment from "./components/EquipmentCard";
 
 export const metadata = {
   title: 'DAoC Info',

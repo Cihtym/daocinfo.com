@@ -1,4 +1,4 @@
-import Equipment from "./components/Equipment";
+import Equipment from "./components/EquipmentCard";
 
 const Home = () => {
   return (
