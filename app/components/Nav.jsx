@@ -3,13 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Nav = () => {
+const Nav = ({ textcolor, logocolor }) => {
   return (
-    <nav className='flex-between w-full mb-2 pt-3 gap-2 items-center'>
+    <nav className="flex justify-between items-center w-full mb-2 gap-2 z-50">
       <Link href='/'>
         <Image 
           // src='/images/navbar-logo.png'
-          src='/images/logo-no-background.svg'
+          src={`/images/daocinfo-logo-${logocolor}.svg`}
           alt='logo'
           width={115}
           height={115}
@@ -17,7 +17,7 @@ const Nav = () => {
         />
         {/* <p className='max-sm:hidden font-satoshi font-semibold text-2xl text-black tracking-wide'>DAoC Info</p> */}
       </Link>
-      <div className='justify-end'>
+      <div className={`justify-end text-${textcolor} font-semibold text-lg`}>
         {/* <Link href='/Chimp' className="px-3">
           Chimp
         </Link> */}

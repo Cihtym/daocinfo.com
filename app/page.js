@@ -1,10 +1,9 @@
-import Equipment from "./components/EquipmentCard";
+import Hero from "./components/Hero"
+
 
 const Home = () => {
   return (
-      <section>
-        Welcome to the main landing page.
-      </section>
+    <Hero />
   )
 }
 

@@ -12,13 +12,18 @@ module.exports = {
         'custom-white': '#EAEBED',
         'custom-gray': '#2C3238',
       },
-      
+          
+      fontFamily: {
+        'limelight': ['Limelight', 'sans-serif']
+      },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+
   },
   plugins: [],
 }
